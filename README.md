@@ -11,6 +11,7 @@ Python
 This project and the tools we will explore will require Python 2.7.  You can download python here: http://www.python.org/getit/
 
 This is a good resource for learning about python's built in libraries: http://docs.python.org/2/library/
+You can use the python interpreter directly or you can use the Pycharm IDE found here: http://www.jetbrains.com/pycharm/
 
 Quandl
 ------
