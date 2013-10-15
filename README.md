@@ -28,16 +28,27 @@ BeautifulSoup
 --------------
 BeautifulSoup is the parser that can be used to scrape data from websites.  BeautifulSoup4 can be downloaded here: http://www.crummy.com/software/BeautifulSoup/bs4/doc/ this site also has great documentation.
 
+html5lib packages
+--------------
+The html5lib parser is required by BeautifulSoup (See line 20 in webparser.py).  html5lib can be downloaded here: https://pypi.python.org/pypi/html5lib
+
 Selenium Web Driver
 -------------------
 When urllib2 cannot be used to scrape the data properly due to javascript in the html page, Selenium can be used to have the browser render and fetch the html.  Selenium can be downloaded here: https://pypi.python.org/pypi/selenium
 
 We only use a small portion of Selenium's huge feature set.  It is complex and full understanding is not required to get the full benefit of this project.  However if you are interested documentation can be found here: http://selenium-python.readthedocs.org/en/latest/
 
+Firefox
+----------
+This is the browser used by the Selenium Web Driver (See line 11 in webparser.py). Firefox can be downloaded from here: http://www.mozilla.org/en-US/firefox/new/
+
+
+
 Running the Project
 ===================
 After installing the dependencies detailed in theGetting Started section you can run the project through the following commands:
-nasdaqdozen [STOCK_SYMBOL]  --> will output the results of each test and a final score
-nasdaqdozen [STOCK_SYMBOL] -v   --> will output the results of each test as well as the data fetched to draw that conclusion
+python nasdaqdozen.py [STOCK_SYMBOL]  --> will output the results of each test and a final score
+python nasdaqdozen.py [STOCK_SYMBOL] -v   --> will output the results of each test as well as the data fetched to draw that conclusion
 
-
+On windows this should be run from the cmd and in linux/Mac it should be run from the command line.  Make sure that you are in the correct directory! 
+Note that in windows python may need to be added to the environment variable PATH
